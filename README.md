@@ -39,6 +39,6 @@ The code performs the following tasks:
 ### Additional Information
 
 * The script uses a fixed set of parameters for MFCC extraction. These parameters can be adjusted based on your specific needs.
-* The number of GMM components (`n_components`) can be tuned for better performance.
+* The number of GMM components (n_components) can be tuned for better performance.
 
 
