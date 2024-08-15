@@ -6,25 +6,18 @@ This repository contains Python code for speaker identification using Gaussian M
 
 This code requires the following Python libraries:
 
-* `librosa`
-* `numpy`
-* `os`
-* `scikit-learn`
-* `pickle`
+* librosa
+* numpy
+* os
+* scikit-learn
+* pickle
 
-**Installation:**
-
-You can install these libraries using pip:
-
-```bash
-pip install librosa numpy os scikit-learn pickle
-```
 
 ### Functionality
 
 The code performs the following tasks:
 
-* **Feature extraction**: Extracts Mel-frequency cepstral coefficients (MFCCs) from audio files using `librosa`.
+* **Feature extraction**: Extracts Mel-frequency cepstral coefficients (MFCCs) from audio files using librosa.
 * **GMM training**: Trains a GMM for each speaker in a given data directory. The GMM learns the statistical distribution of the speaker's MFCCs.
 * **Speaker prediction**: Predicts the speaker of a new audio file by comparing its MFCCs to the trained GMMs and selecting the speaker with the highest likelihood.
 * **Model saving and loading**: Saves the trained GMM models to a pickle file and allows loading them for future predictions.
@@ -36,8 +29,8 @@ The code performs the following tasks:
     * Ensure audio files are in WAV format with a sampling rate of 16 kHz.
 
 2. **Training**:
-    * Update the `data_folder` variable with the path to your data directory.
-    * Run the script. This will train GMMs for each speaker in the directory and save them to the `gmm_models.pkl` file.
+    * Update the data_folder variable with the path to your data directory.
+    * Run the script. This will train GMMs for each speaker in the directory and save them to the gmm_models.pkl file.
 
 
 **Note**: The script includes example paths for the data directory and sample file. You need to modify these paths with your own data locations.
